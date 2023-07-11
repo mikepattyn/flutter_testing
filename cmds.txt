@@ -1,0 +1,6 @@
+curl -u "mikepattyn1:LqzvzsJr14qKy6n4qYnM" \
+-X POST "https://api-cloud.browserstack.com/app-automate/flutter-integration-tests/v2/ios/build" \
+-d '{"devices": ["iPhone 14-16"], "testPackage":"bs://afcfc92079b1f8da3a9a7ad16147e1e6a2f3f8a4","networkLogs":"true","deviceLogs":"true"}' \
+-H "Content-Type: application/json" 
+
+
