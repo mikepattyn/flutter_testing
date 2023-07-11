@@ -1,6 +1,18 @@
+Steps:
+
+Run the script in root.sh
+->
+Publish application to browserstack
+-> test_package_url
+Execute tests.
+
+curl -u "mikepattyn1:LqzvzsJr14qKy6n4qYnM" \
+-X POST "https://api-cloud.browserstack.com/app-automate/flutter-integration-tests/v2/ios/test-package" \
+-F "file=@$HOME/flutter_testing/build/ios_integration/Build/Products/flutter_testing_archive.zip"     
+
 curl -u "mikepattyn1:LqzvzsJr14qKy6n4qYnM" \
 -X POST "https://api-cloud.browserstack.com/app-automate/flutter-integration-tests/v2/ios/build" \
--d '{"devices": ["iPhone 14-16"], "testPackage":"bs://afcfc92079b1f8da3a9a7ad16147e1e6a2f3f8a4","networkLogs":"true","deviceLogs":"true"}' \
+-d '{"devices": ["iPhone 14-16"], "testPackage":"bs://0ddf7e6f74ce6a45bdfa830d8692f758c8d433cd","networkLogs":"true","deviceLogs":"true"}' \
 -H "Content-Type: application/json" 
 
 
