@@ -21,7 +21,7 @@ Future<void> main() {
   ];
 
   final config = TestConfiguration(
-    features: [RegExp(r'features\\.+\.feature')],
+    features: [RegExp('features/*.*.feature')],
     reporters: [
       StdoutReporter(MessageLevel.error),
       ProgressReporter(),
